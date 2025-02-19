@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterListViewController" customModule="RickMorty" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="LYe-GP-I6B" id="PPM-zt-Ozc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="92" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LYe-GP-I6B">
+                    <rect key="frame" x="0.0" y="144" width="393" height="674"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rick And Morty Character List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4O-KE-WXM">
+                    <rect key="frame" x="16" y="91" width="361" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bzu-k8-ZmK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="y4O-KE-WXM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0n1-gv-V2v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y4O-KE-WXM" secondAttribute="trailing" constant="16" id="4l1-SS-azx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LYe-GP-I6B" secondAttribute="trailing" id="GJ1-cT-VL9"/>
+                <constraint firstItem="LYe-GP-I6B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TYm-k4-wwo"/>
+                <constraint firstItem="y4O-KE-WXM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="afj-Io-0gL"/>
+                <constraint firstItem="LYe-GP-I6B" firstAttribute="top" secondItem="y4O-KE-WXM" secondAttribute="bottom" constant="32" id="bvx-Br-qza"/>
+                <constraint firstItem="LYe-GP-I6B" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="pK5-Bu-vPJ"/>
+            </constraints>
+            <point key="canvasLocation" x="5.343511450381679" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
